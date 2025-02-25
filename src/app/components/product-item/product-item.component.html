@@ -1,0 +1,9 @@
+<li>
+    <input class="apple-toggle" type="checkbox" id="product-{{product()?.name}}" [value]="product()?.checked" (change)="toggle()"/>
+    <label for="product-{{product()?.name}}"><span>{{product().emojy}}</span>{{product()?.name}}</label>
+    @if (product().checked) {
+        <button (click)="increase()" class="apple-button plus">+</button>
+        <span>{{product().count}}</span>
+        <button (click)="decrease()" class="apple-button minus">-</button>
+    }
+</li>

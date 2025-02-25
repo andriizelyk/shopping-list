@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+    li {
+        display: flex;
+        cursor: pointer;
+    }
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px); /* Blur effect */
+    border-radius: 12px;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h5 {
+    margin: 0;
+}
+

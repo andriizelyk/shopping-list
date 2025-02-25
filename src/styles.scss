@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+.apple-button {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background: linear-gradient(to bottom, #007AFF, #005FCC); /* Apple Blue */
+    border: none;
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 122, 255, 0.3);
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-align: center;
+    outline: none;
+}
+
+.apple-button:hover {
+    background: linear-gradient(to bottom, #008CFF, #0066DD);
+    box-shadow: 0 6px 15px rgba(0, 122, 255, 0.4);
+}
+
+.apple-button:active {
+    transform: scale(0.97);
+    box-shadow: 0 2px 5px rgba(0, 122, 255, 0.5);
+}
+
+.apple-button:focus {
+    outline: 2px solid rgba(0, 122, 255, 0.5);
+}
+
+body {
+    background: linear-gradient(to right, hsl(176, 76%, 85%), hwb(201 0% 0%));
+}
