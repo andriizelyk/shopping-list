@@ -9,9 +9,14 @@ ul {
     border-radius: 12px;
     padding: 20px;
     border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 400px;
 }
 
 h5 {
-    margin: 0;
+    margin: 5px 0;
+}
+
+button {
+    margin-bottom: 20px;
 }
 

@@ -1,12 +1,13 @@
 <h3>Select products!</h3>
-
-<ul>
-    @for (category of getCategories(); track $index) {
-        <h5>{{category}}</h5>
-        @for (item of getProducts(category); track $index) {
-            <app-product-item [product] = "item" (productToggled)="toggleProduct($event)" (productCountChanged)="countProductUpdate($event)"/>
+<div class="list-container">
+    <ul>
+        @for (category of getCategories(); track $index) {
+            <h5>{{category}}</h5>
+            @for (item of getProducts(category); track $index) {
+                <app-product-item [product] = "item" (productToggled)="toggleProduct($event)" (productCountChanged)="countProductUpdate($event)"/>
+            }
         }
-    }
-</ul>
+    </ul>
+</div>
 
 <button (click)="getList()" class="apple-button">Copy list</button>
